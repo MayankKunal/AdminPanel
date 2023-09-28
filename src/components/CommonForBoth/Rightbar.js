@@ -72,7 +72,7 @@ const RightSidebar = props => {
                     }
                   }}
                 />
-                <label htmlFor="radioHorizontal">Horizontal</label>
+                {/* <label htmlFor="radioHorizontal">Horizontal</label> */}
               </div>
 
               <hr className="mt-1" />
@@ -251,7 +251,7 @@ const RightSidebar = props => {
                 </React.Fragment>
               ) : null}
 
-              <h6 className="text-center">Choose Layouts</h6>
+              {/* <h6 className="text-center">Choose Layouts</h6>
 
               <div className="mb-2">
                 <Link
@@ -286,15 +286,15 @@ const RightSidebar = props => {
                     alt=""
                   />
                 </Link>
-              </div>
+              </div> */}
 
-              <Link
+              {/* <Link
                 to="#"
                 className="btn btn-primary btn-block mt-3"
                 target="_blank"
               >
                 <i className="mdi mdi-cart ms-1" /> Purchase Now
-              </Link>
+              </Link> */}
             </div>
           </div>
         </SimpleBar>

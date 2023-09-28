@@ -154,33 +154,112 @@ const SidebarContent = props => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/calendar" className=" waves-effect">
                 <i className="ti-calendar"></i>
                 <span>{props.t("Calendar")}</span>
               </Link>
+            </li> */}
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="ti-view-list"></i>
+                <span>{props.t("Modules")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                {/* <li>
+                  <Link to="/createModule">{props.t("Create Module")}</Link>
+                </li> */}
+                <li>
+                  <Link to="/ViewModule">{props.t("Modules List")} </Link>
+                </li>
+                {/* <li>
+                  <Link to="/email-compose">{props.t("Email Compose")} </Link>
+                </li> */}
+              </ul>
             </li>
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="ti-unlock"></i>
+                <span>{props.t("Permissions")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                {/* <li>
+                  <Link to="/createPermission">{props.t("Create")}</Link>
+                </li> */}
+                <li>
+                  <Link to="/viewPermission">{props.t("Permission List")} </Link>
+                </li>
+                {/* <li>
+                  <Link to="/email-compose">{props.t("Email Compose")} </Link>
+                </li> */}
+              </ul>
+            </li>
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+                <i className="ti-user"></i>
+                <span>{props.t("Roles")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                {/* <li>
+                  <Link to="/createRole">{props.t("Create")}</Link>
+                </li> */}
+                <li>
+                  <Link to="/viewRole">{props.t("Role")} </Link>
+                </li>
+                {/* <li>
+                  <Link to="/email-compose">{props.t("Email Compose")} </Link>
+                </li> */}
+              </ul>
+            </li>
+            
 
             <li>
               <Link to="/#" className="has-arrow waves-effect">
-                <i className="ti-email"></i>
-                <span>{props.t("Email")}</span>
+              <i class="fas fa-users-cog"></i>
+                <span>{props.t("Admin")}</span>
               </Link>
               <ul className="sub-menu" aria-expanded="false">
+                
                 <li>
-                  <Link to="/email-inbox">{props.t("Inbox")}</Link>
+                  <Link to="/viewAdmin">{props.t("View")} </Link>
                 </li>
                 <li>
-                  <Link to="/email-read">{props.t("Email Read")} </Link>
-                </li>
-                <li>
-                  <Link to="/email-compose">{props.t("Email Compose")} </Link>
+                  <Link to="/subAdmin/Manish">{props.t("My SubAdmin")} </Link>
                 </li>
               </ul>
             </li>
 
-            <li className="menu-title">{props.t("Components")}</li>
 
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+              <i class="fas fa-handshake"></i>
+                <span>{props.t("Channel Partner")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                
+                <li>
+                  <Link to="/viewChannelPartner">{props.t("View Channel Partner")} </Link>
+                </li>
+      
+              </ul>
+            </li>
+
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
+              <i class="fas fa-user-astronaut"></i>
+                <span>{props.t("Driver")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+               
+                <li>
+                  <Link to="/viewDriver">{props.t("View Drivers")} </Link>
+                </li>
+      
+              </ul>
+            </li>
+
+            {/* <li className="menu-title">{props.t("Components")}</li> */}
+    {/*
             <li>
               <Link to="/#" className="has-arrow waves-effect">
                 <i className="ti-package"></i>
@@ -514,6 +593,10 @@ const SidebarContent = props => {
                 </li>
               </ul>
             </li>
+          
+
+*/}
+
           </ul>
         </div>
       </SimpleBar>

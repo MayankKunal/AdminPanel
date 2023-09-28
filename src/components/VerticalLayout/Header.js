@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Form, Dropdown, DropdownMenu, DropdownItem, DropdownToggle, Input, Button } from "reactstrap";
 
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 // Import menuDropdown
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown";
@@ -14,7 +15,7 @@ import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
 import logodarkImg from "../../assets/images/logo-dark.png";
 import logosmImg from "../../assets/images/logo-sm.png";
 import logolightImg from "../../assets/images/logo-light.png";
-
+import townerLogo from '../../assets/images/townerLogo.png';
 
 //i18n
 import { withTranslation } from "react-i18next";
@@ -29,7 +30,7 @@ import {
 const Header = props => {
   const [search, setsearch] = useState(false);
   const [singlebtn, setSinglebtn] = useState(false);
-
+const navigate=useNavigate();
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   function toggleFullscreen() {
@@ -80,20 +81,20 @@ const Header = props => {
                   <img src={logosmImg} alt="" height="22" />
                 </span>
                 <span className="logo-lg">
-                  <img src={logodarkImg} alt="" height="17" />
+                  <img src={townerLogo} alt="" height="17" />
                 </span>
               </Link>
 
               <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logosmImg} alt="" height="22" />
+                  <img src={townerLogo} alt="" height="22" />
                 </span>
                 <span className="logo-lg">
-                  <img src={logolightImg} alt="" height="18" />
+                  <img src={townerLogo} alt="" height="25" />
                 </span>
               </Link>
             </div>
-            <button type="button" className="btn btn-sm px-3 font-size-24 header-item waves-effect"
+            {/* <button type="button" className="btn btn-sm px-3 font-size-24 header-item waves-effect"
               id="vertical-menu-btn"
               onClick={() => {
                 tToggle();
@@ -101,15 +102,19 @@ const Header = props => {
               data-target="#topnav-menu-content"
             >
               <i className="mdi mdi-menu"></i>
-            </button>
+            </button> */}
 
-            <div className="d-none d-sm-block">
-
-              <Dropdown
+            <div className="d-none d-sm-block mt-3 ms-3">
+            <div>
+                  <i onClick={() => navigate(-1)} className="fas fa-arrow-alt-circle-left fs-3 me-5 "/>
+                  <i onClick={() => navigate(+1)} className="fas fa-arrow-alt-circle-right fs-3 me-5 "/>
+                  </div>
+              {/* <Dropdown
                 isOpen={singlebtn}
                 toggle={() => setSinglebtn(!singlebtn)}
                 className="pt-3 d-inline-block"
               >
+
                 <DropdownToggle className="btn btn-secondary" caret>
                   Create <i className="mdi mdi-chevron-down"></i>
                 </DropdownToggle>
@@ -120,7 +125,7 @@ const Header = props => {
                   <div className="dropdown-divider"></div>
                   <DropdownItem>Separated link</DropdownItem>
                 </DropdownMenu>
-              </Dropdown>
+              </Dropdown> */}
 
             </div>
           </div>

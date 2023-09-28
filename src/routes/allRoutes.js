@@ -112,6 +112,35 @@ import Pages500 from "../pages/Utility/pages-500";
 import PagesGallery from "../pages/Utility/PagesGallery";
 import PagesDirectory from "../pages/Utility/PagesDirectory";
 import PagesProfile from "pages/Utility/pages-profile";
+//Role
+import CreateRole from "pages/Roles/CreateRole";
+import ViewRole from "pages/Roles/ViewRoles";
+import EditRole from "pages/Roles/EditRole";
+//Permission
+import CreatePermission from "pages/Permission/CreatePermission";
+import ViewPermission from "pages/Permission/ViewPermission";
+import EditPermission from "pages/Permission/EditPermission";
+import { PermissionList } from "pages/Permission/PermissionList";
+//ADMIN
+import CreateAdmin from "pages/Admins/CreateAdmin";
+import ViewAdmin from "pages/Admins/ViewAdmin";
+import SubAdmin from "pages/Admins/SubAdmin";
+import EditAdmin from "pages/Admins/EditAdmin";
+//Module
+import ViewModule from "pages/Module/ViewModule";
+import CreateModule from "pages/Module/CreateModule";
+import EditModule from "pages/Module/EditModule";
+//Ticket
+import Ticket from "pages/Admins/Tickets";
+import TicketList from "../pages/Admins/TicketList";
+//Channel Partner
+import CreateChannelPartner from "pages/ChannelPartner/CreateChannelPartner";
+import ViewChannelPartner from "pages/ChannelPartner/ViewChannelPartner";
+import EditChannelPartner from "pages/ChannelPartner/EditChannelPartner";
+//Driver
+import CreateDriver from "pages/Driver/CreateDriver";
+import ViewDriver from "pages/Driver/ViewDriver";
+import EditDriver from "pages/Driver/EdItDriver";
 
 const userRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
@@ -121,7 +150,39 @@ const userRoutes = [
 
   // //profile
   { path: "/profile", component: <UserProfile /> },
+  //role
+  {path:"/createRole",component:<CreateRole/>},
+  {path:"/viewRole",component:<ViewRole/>},
+  {path:"/editRole",component:<EditRole/>},
+  //Permission
+  {path:"/createPermission",component:<CreatePermission/>},
+  {path:"/viewPermission",component:<ViewPermission/>},
+  {path:"/editPermission",component:<EditPermission/>},
+  {path:"/permissionList",component:<PermissionList/>},
 
+
+  //ADMIN
+  {path:"/createAdmin",component:<CreateAdmin/>},
+  {path:"/viewAdmin",component:<ViewAdmin/>},
+  {path:"/subAdmin/:adminName",component:<SubAdmin/>},
+  {path:"/editAdmin",component:<EditAdmin/>},
+  //Module
+  {path:"/createModule",component:<CreateModule/>},
+  {path:"/viewModule",component:<ViewModule/>},
+  {path:"/editModule",component:<EditModule/>},
+
+  //Ticket
+  {path:"/ticket",component:<Ticket/>},
+  {path:"/ticketList",component:<TicketList/>},
+
+  //ChannelPartner
+  {path:"/createChannelPartner",component:<CreateChannelPartner/>},
+  {path:"/viewChannelPartner",component:<ViewChannelPartner/>},
+  {path:"/editChannelPartner",component:<EditChannelPartner/>},
+  //Driver
+  {path:"/createDriver",component:<CreateDriver/>},
+  {path:"/viewDriver",component:<ViewDriver/>},
+  {path:"/editDriver",component:<EditDriver/>},
   //Email
   { path: "/email-inbox", component: <EmailInbox /> },
   { path: "/email-read", component: <EmailRead /> },
@@ -213,7 +274,7 @@ const authRoutes = [
 
   { path: "/pages-maintenance", component: <PagesMaintenance /> },
   { path: "/pages-comingsoon", component: <PagesComingsoon /> },
-  { path: "/pages-404", component: <Pages404 /> },
+  { path: "*", component: <Pages404 /> },
   { path: "/pages-500", component: <Pages500 /> },
 
   // Authentication Inner
