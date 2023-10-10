@@ -17,7 +17,7 @@ import { loginUser, apiError } from "../../store/actions";
 
 // import images
 import logoSm from "../../assets/images/logo-sm.png";
-
+import towner from "../../assets/images/towner.png";
 const Login = props => {
   const dispatch = useDispatch();
 
@@ -72,10 +72,10 @@ const Login = props => {
                       Welcome Back !
                     </h5>
                     <p className="text-white-50">
-                      Sign in to continue to Veltrix.
+                      Sign in to continue to Towner.
                     </p>
                     <Link to="/" className="logo logo-admin">
-                      <img src={logoSm} height="24" alt="logo" />
+                      <img src={towner} height="24" alt="logo" />
                     </Link>
                   </div>
                 </div>
@@ -163,8 +163,7 @@ const Login = props => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © {new Date().getFullYear()} Veltrix. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © {new Date().getFullYear()} Towner. 
                 </p>
               </div>
             </Col>

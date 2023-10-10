@@ -141,7 +141,10 @@ import EditChannelPartner from "pages/ChannelPartner/EditChannelPartner";
 import CreateDriver from "pages/Driver/CreateDriver";
 import ViewDriver from "pages/Driver/ViewDriver";
 import EditDriver from "pages/Driver/EdItDriver";
-
+//FleetOwner
+import CreateFleetOwner from "pages/FleetOwner/CreateFleetOwner";
+import ViewFleetOwner from "pages/FleetOwner/ViewFleetOwner";
+import EditFleetOwner from "pages/FleetOwner/EditFleetOwner";
 const userRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
 
@@ -179,6 +182,11 @@ const userRoutes = [
   {path:"/createChannelPartner",component:<CreateChannelPartner/>},
   {path:"/viewChannelPartner",component:<ViewChannelPartner/>},
   {path:"/editChannelPartner",component:<EditChannelPartner/>},
+//Fleet Owner
+ //ChannelPartner
+ {path:"/createFleetOwner",component:<CreateFleetOwner/>},
+ {path:"/viewFleetOwner",component:<ViewFleetOwner/>},
+ {path:"/editFleetOwner",component:<EditFleetOwner/>},
   //Driver
   {path:"/createDriver",component:<CreateDriver/>},
   {path:"/viewDriver",component:<ViewDriver/>},

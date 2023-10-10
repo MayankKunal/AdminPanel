@@ -14,7 +14,7 @@ import { connect, useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 // import images
-import logoSm from "../../assets/images/logo-sm.png";
+import logoSm from "../../assets/images/towner.png";
 
 const Register = props => {
   const history = useNavigate();
@@ -81,7 +81,7 @@ const Register = props => {
                 <div className="bg-primary">
                   <div className="text-primary text-center p-4">
                     <h5 className="text-white font-size-20">Free Register</h5>
-                    <p className="text-white-50">Get your free Veltrix account now.</p>
+                    <p className="text-white-50">Get your free Towner account now.</p>
                     <Link to="/index" className="logo logo-admin">
                       <img src={logoSm} height="24" alt="logo" />
                     </Link>
@@ -169,7 +169,7 @@ const Register = props => {
 
                       <div className="mt-2 mb-0 row">
                         <div className="col-12 mt-4">
-                          <p className="mb-0">By registering you agree to the Veltrix <Link to="#" className="text-primary">Terms of Use</Link></p>
+                          <p className="mb-0">By registering you agree to the Towner <Link to="#" className="text-primary">Terms of Use</Link></p>
                         </div>
                       </div>
                     </Form>
@@ -185,8 +185,7 @@ const Register = props => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © {new Date().getFullYear()} Veltrix. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © {new Date().getFullYear()} Towner. 
                 </p>
               </div>
             </Col>

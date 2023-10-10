@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 
-const  ViewChannelPartner = () => {
+const  ViewFleetOwner = () => {
 
 
 
@@ -59,21 +59,21 @@ const  ViewChannelPartner = () => {
         email: "tiger467@gamil.com",
         mobileNo: "7488135956",
         city:"Allahabad",
-        action: <><Link to="/editChannelPartner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link> <i className="ti-archive fs-3 text-danger"/></>,
+        action: <><Link to="/editFleetOwner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link> <i className="ti-archive fs-3 text-danger"/></>,
       },
       {sno: "2",
         name: 'Jhon Doe',
         email: "jhon467@gamil.com",
         mobileNo: "7485135956",
         city:"Allahabad",
-        action: <><Link to="/editChannelPartner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link><i className="ti-archive fs-3 text-danger"/>  </>,
+        action: <><Link to="/editFleetOwner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link><i className="ti-archive fs-3 text-danger"/>  </>,
       },
       {sno: "3",
         name:'Mark Watney',
         email: "mark567@gmail.com",
         mobileNo: "7488135956",
         city:"Kolkata",
-        action: <> <Link to="/editChannelPartner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link><i className="ti-archive fs-3 text-danger"/> </>,
+        action: <> <Link to="/editFleetOwner"><i className="ti-pencil-alt fs-3 me-5 text-warning"/></Link><i className="ti-archive fs-3 text-danger"/> </>,
       },
     ],
   };
@@ -82,7 +82,7 @@ const  ViewChannelPartner = () => {
     <React.Fragment>
       <div className="page-content">
         <div className="container-fluid">
-          <Breadcrumbs maintitle="Towner" title="Channel Partner" breadcrumbItem="View Channel Partner" />
+          <Breadcrumbs maintitle="Towner" title="Fleet Owner" breadcrumbItem="View Fleet Owner" />
 
           
 
@@ -90,13 +90,13 @@ const  ViewChannelPartner = () => {
             <Col className="col-12">
               <Card>
                 <CardBody>
-                  <CardTitle className="h4 text-center"><h1>List of Channel Partner</h1> </CardTitle>
+                  <CardTitle className="h4 text-center"><h1>List of Fleet Owner</h1> </CardTitle>
                   <div className="text-start mb-3">  <Button
                       color="primary"
                       className="btn btn-primary waves-effect waves-light"
                       
                     >
-                     <Link to="/createChannelPartner" style={{color:'white'}}> Add New Channel Partner</Link>
+                     <Link to="/createFleetOwner" style={{color:'white'}}> Add New Fleet Owner</Link>
                     </Button></div>
 
                   <MDBDataTable responsive striped bordered data={data} />
@@ -114,4 +114,4 @@ const  ViewChannelPartner = () => {
 
 
 
-export default ViewChannelPartner
+export default ViewFleetOwner

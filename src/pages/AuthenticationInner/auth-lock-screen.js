@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, CardBody, Card, Form, FormFeedback, Input } from "reactstrap";
 
 // import images
-import logo from "../../assets/images/logo-sm.png";
+import logo from "../../assets/images/towner.png";
 import avatar from "../../assets/images/users/user-1.jpg";
 
 const LockScreen = () => {
@@ -108,8 +108,7 @@ const LockScreen = () => {
                   </Link>{" "}
                 </p>
                 <p>
-                  © 2021 Veltrix. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
+                  © 2023 Towner. 
                 </p>
               </div>
             </Col>

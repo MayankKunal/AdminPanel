@@ -246,6 +246,20 @@ const SidebarContent = props => {
 
             <li>
               <Link to="/#" className="has-arrow waves-effect">
+              <i class="fas fa-handshake"></i>
+                <span>{props.t("Fleet Owner")}</span>
+              </Link>
+              <ul className="sub-menu" aria-expanded="false">
+                
+                <li>
+                  <Link to="/viewFleetOwner">{props.t("View Fleet Owner")} </Link>
+                </li>
+      
+              </ul>
+            </li>
+
+            <li>
+              <Link to="/#" className="has-arrow waves-effect">
               <i class="fas fa-user-astronaut"></i>
                 <span>{props.t("Driver")}</span>
               </Link>
